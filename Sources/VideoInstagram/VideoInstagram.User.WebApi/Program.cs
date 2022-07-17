@@ -7,6 +7,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//To devide SPA and API I add cors policy
+builder.Services.AddCors(
+                options =>
+                {
+                    options.AddPolicy("AllowAll", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+                });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -17,7 +24,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAll");
 app.UseAuthorization();
 
 app.MapControllers();

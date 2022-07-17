@@ -266,3 +266,4 @@ documentation/user_documentation/.vscode/docfx-assistant/
 Sources/Microservices/Prodot.IoT.Services.ReportGeneration.Tester/*-report-template.xlsx.xlsx
 
 desktop.ini
+/Sources/VideoInstagram/VideoInstagram.User.WebApp/ClientApp/.angular/cache
