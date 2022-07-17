@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.User.WebApi", "VideoInstagram.User.WebApi\VideoInstagram.User.WebApi.csproj", "{61A964D4-3864-4392-A4FA-80C69DC3E96E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.User.WebApp", "VideoInstagram.User.WebApp\VideoInstagram.User.WebApp.csproj", "{4AA0577C-0410-456A-8EE3-182E3F6413F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D4BA8F5-00F7-4D1A-8628-8715F2DD5D19}
+	EndGlobalSection
+EndGlobal
