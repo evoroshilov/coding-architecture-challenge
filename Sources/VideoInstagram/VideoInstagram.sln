@@ -3,9 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.User.WebApi", "VideoInstagram.User.WebApi\VideoInstagram.User.WebApi.csproj", "{61A964D4-3864-4392-A4FA-80C69DC3E96E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoInstagram.WebApp", "VideoInstagram.User.WebApp\VideoInstagram.WebApp.csproj", "{4AA0577C-0410-456A-8EE3-182E3F6413F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.User.WebApp", "VideoInstagram.User.WebApp\VideoInstagram.User.WebApp.csproj", "{4AA0577C-0410-456A-8EE3-182E3F6413F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoInstagram.DataLayer", "VideoInstagram.DataLayer\VideoInstagram.DataLayer.csproj", "{0D3A2FF8-EBA5-48A7-BEC5-58016D39AFEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoInstagram.WebApi.Dtos", "VideoInstagram.User.WebApi.Dtos\VideoInstagram.WebApi.Dtos.csproj", "{B219D86C-9F56-4A2E-A468-77DCD1C5F2DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoInstagram.WebApi", "VideoInstagram.WebApi\VideoInstagram.WebApi.csproj", "{5935B047-8CC7-4B7D-8DFD-22F430C8C2CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoInstagram.Shared", "VideoInstagram.Shared\VideoInstagram.Shared.csproj", "{8A8C4A3E-D156-4935-8655-10A6C6C98388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.DataLayer.Repositories", "VideoInstagram.DataLayer.Repositories\VideoInstagram.DataLayer.Repositories.csproj", "{DD59ACF5-A171-417F-A1EE-73736FF06AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.EmailService", "VideoInstagram.EmailService\VideoInstagram.EmailService.csproj", "{E630773E-6334-4A46-A48D-FEC1E3AD961F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.DataLayer.AzureBlobStorageService", "VideoInstagram.DataLayer.AzureBlobStorageService\VideoInstagram.DataLayer.AzureBlobStorageService.csproj", "{3F712C5A-1344-4D44-8471-9B1DBD188B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoInstagram.Encoder", "VideoInstagram.Encoder\VideoInstagram.Encoder.csproj", "{BCAF5E91-D896-4665-A064-83D068E11B14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +27,42 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61A964D4-3864-4392-A4FA-80C69DC3E96E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AA0577C-0410-456A-8EE3-182E3F6413F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3A2FF8-EBA5-48A7-BEC5-58016D39AFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3A2FF8-EBA5-48A7-BEC5-58016D39AFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3A2FF8-EBA5-48A7-BEC5-58016D39AFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3A2FF8-EBA5-48A7-BEC5-58016D39AFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B219D86C-9F56-4A2E-A468-77DCD1C5F2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B219D86C-9F56-4A2E-A468-77DCD1C5F2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B219D86C-9F56-4A2E-A468-77DCD1C5F2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B219D86C-9F56-4A2E-A468-77DCD1C5F2DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5935B047-8CC7-4B7D-8DFD-22F430C8C2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5935B047-8CC7-4B7D-8DFD-22F430C8C2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5935B047-8CC7-4B7D-8DFD-22F430C8C2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5935B047-8CC7-4B7D-8DFD-22F430C8C2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8C4A3E-D156-4935-8655-10A6C6C98388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8C4A3E-D156-4935-8655-10A6C6C98388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8C4A3E-D156-4935-8655-10A6C6C98388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8C4A3E-D156-4935-8655-10A6C6C98388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD59ACF5-A171-417F-A1EE-73736FF06AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD59ACF5-A171-417F-A1EE-73736FF06AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD59ACF5-A171-417F-A1EE-73736FF06AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD59ACF5-A171-417F-A1EE-73736FF06AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E630773E-6334-4A46-A48D-FEC1E3AD961F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E630773E-6334-4A46-A48D-FEC1E3AD961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E630773E-6334-4A46-A48D-FEC1E3AD961F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E630773E-6334-4A46-A48D-FEC1E3AD961F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F712C5A-1344-4D44-8471-9B1DBD188B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F712C5A-1344-4D44-8471-9B1DBD188B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F712C5A-1344-4D44-8471-9B1DBD188B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F712C5A-1344-4D44-8471-9B1DBD188B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAF5E91-D896-4665-A064-83D068E11B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAF5E91-D896-4665-A064-83D068E11B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAF5E91-D896-4665-A064-83D068E11B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAF5E91-D896-4665-A064-83D068E11B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
